@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>crud: local storage</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-3">Crud - Local Storage</span>
+        </div>
+    </nav>
+   
+       <div class="container mt-3">
+
+         <div class="row"> 
+           <!-- Aca definimos y creamos los inputs-->
+            <div class="col-lg-3">
+                <form id="form_cliente">
+                  <div class="mb-3">
+                    <label class="form-label">Dirección IP:</label>
+                    <input id="ip" class="form-control" type="text" >
+                  </div>autofocus
+                  <div class="mb-3">
+                    <label class="form-label">Puerto:</label>
+                    <input id="puerto" class="form-control" type="number">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">País:</label>
+                    <input id="pais" class="form-control" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Ciudad:</label>
+                    <input id="ciudad" class="form-control" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Velocidad (En Mbs/S):</label>
+                    <input id="velocidad" class="form-control" type="number">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Tipo (Coaxil, Fibra Optica o DSL):</label>
+                    <input id="tipo" class="form-control" type="text">
+                  </div>
+                  <button type="button" onclick="GUARDAR()" id="btn_guardar" class="btn btn-warning">GUARDAR</button>
+                  <button type="button" style="display: none;" id="btn_actualizar" class="btn btn-primary" >ACTUALIZAR</button>
+                </form>
+            </div>
+            
+            <div class="col-lg-9">
+
+                <!-- Creamos la tabla donde se mostraran los datos-->
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>IP</th>
+                            <th>Puerto</th>
+                            <th>Pais</th>
+                            <th>Ciudad</th>
+                            <th>Velocidad</th>
+                            <th>Tipo</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+
+            </div>
+         </div>
+       </div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

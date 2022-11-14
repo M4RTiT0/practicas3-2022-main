@@ -1,0 +1,23 @@
+Para inicializar el proyecto hacemos lo siguiente:
+
+    npm init --y
+
+1-- instalar express
+
+    npm i express
+
+2-- instalar cors
+    
+    npm i cors
+
+3-- instalar nodemon
+
+    npm i nodemon -D
+
+4-- instalar morgan
+ 
+    npm i morgan -D
+
+5-- Instalar conector de MariaDB
+
+    npm i mariadb

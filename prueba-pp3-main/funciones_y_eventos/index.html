@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Actividad Nº2</title>
+    <link rel="icon" href="imagenes/icon.png">
+</head>
+
+<body background="imagenes/fondo.jpg">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Concesionaria de Autos:</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="card mb-3" style="max-width: 900px;">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                    <img src="imagenes/ashe.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Los precios preestablecidos son:</h5>
+                            <p class="card-text"><small class="text-muted">• Ford Ka: $2.900.00</small></p>
+                            <p class="card-text"><small class="text-muted">• Ford Fiesta: $3.350.000</small></p>
+                            <p class="card-text"><small class="text-muted">• Ford Focus: $3.960.000</small></p>
+                            <h4>elegir vehiculo:</h4>
+                            <select id="eleccion">
+                                <option selected disabled value="-1">Seleccione operación:</option>
+                                <option value="0">Ford Ka | (descuento del: 15%)</option>
+                                <option value="1">Ford Fiesta | (descuento del: 5%)</option>
+                                <option value="2">Ford focus | (descuento del: 10%)</option>
+                             </select>
+
+                            <button class="btn btn-success" onclick="calculo()">Calcular</button>
+
+                            <h2 id="resultado2">resultado</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="main.js"></script>
+        </div>
+    </div>
+</body>
+</html>

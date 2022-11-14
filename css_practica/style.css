@@ -1,0 +1,17 @@
+.fondo 
+{
+    background: blue;
+    color: white;
+}
+
+.estilo_boton
+{
+    height: 40px;
+    width: 200px;
+}
+
+.fuente 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}

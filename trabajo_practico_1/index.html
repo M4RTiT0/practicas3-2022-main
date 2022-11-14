@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Nº1-Roman David</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-white bg-warning">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">T.P. Nº1</span>
+        </div>
+    </nav> 
+      <div class="container">
+        <div class="mb-1"><!--ALTA PRODUCTO-->
+          <h1 class="display-5"><label>Alta producto</label></h1>
+        </div>
+        <div class="row"><!--ROW GENERAL-->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6"><!--COLUMNA IZQUIERDA-->
+            <div class="row">
+              <div class="col-lg-12"> <!--DESCRIPCIÓN Y DETALLE-->
+                  <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Detalle</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+              </div>
+              <div class="col-lg-6"> <!--$ y Nº-->
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="number" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Nº</span>
+                  <input type="number" class="form-control" placeholder="Stock" >
+                </div>
+              </div>
+              <div class="col-lg-6"><!--$ y CATEGORIA-->
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="number" class="form-control" placeholder="Precio de venta" >
+                </div>
+                    <select class="form-select">
+                      <option selected>Categoria...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end"><!--BOTON-->
+                <button class="btn btn-success">Guardar producto</button>
+              </div>  
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-6"><!--COLUMNA DERECHA-->
+            <div class="row">
+              <div class="col-lg-6"><!--FECHA DE ALTA-->
+                <div class="mb-3">
+                <label class="form-label">Fecha de alta</label>
+                <input class="form-control" type="date">
+                </div>
+              </div>
+              <div class="col-lg-6"><!--HORA DE ALTA-->
+                <div class="mb-3">
+                  <label class="form-label">Hora de alta</label>
+                  <input class="form-control" type="time">
+                </div>
+             </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12"><!--IMAGEN-->
+                    <div class="mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                            <img src="https://www.kreatuweb.com/wp-content/uploads/2021/03/bootstrap.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+</body>
+</html>
