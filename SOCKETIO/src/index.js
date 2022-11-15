@@ -17,5 +17,7 @@ const io = socketio(servidor)
 
 //establecemos la apertura del canal para emitir posteriormente los datos
 io.on('connection', (socket) => {
-    socket.emit('dato-socket', 10)
+    setinterval( () => {
+        socket.emit('dato-socket', 10)
+    }, 1000)
 });
