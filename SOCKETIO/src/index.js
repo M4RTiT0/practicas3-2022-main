@@ -20,4 +20,9 @@ io.on('connection', (socket) => {
     setinterval( () => {
         socket.emit('dato-socket', 10)
     }, 1000)
+
+    socket.on('respuesta', (valor) => {
+        console.log(valor)
+    });
+
 });
